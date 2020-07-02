@@ -1,13 +1,13 @@
 import React from "react";
-import App from "./App";
 import { render } from "@testing-library/react";
+import NewBoxForm from "./NewBoxForm";
 
 it("renders without crashing", () => {
-  render(<App />)
+  render(<NewBoxForm />);
 });
 
 it("matches the snapshot", () => {
-  const { asFragment } = render(<App />);
+  const { asFragment } = render(<NewBoxForm />);
 
   expect(asFragment()).toMatchSnapshot();
 });
